@@ -16,4 +16,4 @@ RUN pip install pytesseract
 # Copiar el resto de los archivos al contenedor
 COPY ./ ./
 
-CMD ["python", "manage.py", "test", "--noinput"]
+CMD ["init-ssl.shdocker-entrypoint-initdb.d/"]
