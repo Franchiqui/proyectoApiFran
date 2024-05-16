@@ -16,5 +16,6 @@ RUN pip install pytesseract
 # Copiar el resto de los archivos al contenedor
 COPY ./ ./
 
-# Definir el comando de entrada del contenedor
-CMD ["sh", "entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
