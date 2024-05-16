@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import scanTexto_func
+from .utils import scanTexto_func
 from .forms import ImageUploadForm
 
 
