@@ -17,4 +17,4 @@ RUN pip install pytesseract
 COPY ./ ./
 
 # Definir el comando de entrada del contenedor
-CMD ["sh", "entrypoint.sh"]
+CMD ["python", "app.py"]
