@@ -17,4 +17,4 @@ RUN pip install pytesseract
 COPY ./ ./
 
 # Definir el comando de entrada del contenedor
-CMD ["python", "mysite.py"]
+CMD ["python", "mysite.urls.py"]
