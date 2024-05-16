@@ -1,7 +1,7 @@
 FROM python:3.12
 
 ENV PYTHONUNBUFFERED=1
-WORKDIR /app
+WORKDIR /mysite
 
 
 RUN pip install Django==5.0.6
@@ -17,4 +17,4 @@ RUN pip install pytesseract
 COPY ./ ./
 
 # Definir el comando de entrada del contenedor
-CMD ["python", "mysite.urls.py"]
+CMD ["python", "urls.py"]
